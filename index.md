@@ -3,7 +3,7 @@ This will serve as a brief description of your project. Limit this to three sent
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Kabeer | Saratoga High School | Electrical Engineering | Incoming Junior |
+| Kabeer | Saratoga High School | Electrical/Civil Engineering | Incoming Junior |
 
 ![Headstone Image](https://lh3.googleusercontent.com/pw/AM-JKLUs34l1tyNJTUKSLyaKz-kIGK9fnEBM1Me7oWDi9mlL5cS_06oFhJz_D0Ey2YoYPASqmSnEuUlxU5ng6tcS27R8TLsc1obBO4BN5nAj57S0xueLNIdNDCR7BKxehwp3kNpF_Qv09AY441ei6peC4YBt=s1292-no?authuser=0)
   
