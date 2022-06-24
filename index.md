@@ -1,5 +1,4 @@
 ﻿# Project Name/Title Goes Here
-This will serve as a brief description of your project. Limit this to three sentences because it can become overly long at that point. This copy should draw the user in and make she/him want to read more.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -8,7 +7,7 @@ This will serve as a brief description of your project. Limit this to three sent
 ![Headstone Image](https://lh3.googleusercontent.com/pw/AM-JKLUs34l1tyNJTUKSLyaKz-kIGK9fnEBM1Me7oWDi9mlL5cS_06oFhJz_D0Ey2YoYPASqmSnEuUlxU5ng6tcS27R8TLsc1obBO4BN5nAj57S0xueLNIdNDCR7BKxehwp3kNpF_Qv09AY441ei6peC4YBt=s1292-no?authuser=0)
   
 # Final Milestone
-My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint. 
+My final milestone is the fully functional Cleanator, my tabletop cleaning robot. The project is capable of cleaning a table, while not falling off the edges and avoiding crashing into items placed on the table. My greatest addition were the new sponges that I added to the back, on either side of the robot. They were challenging to secure, since sponges don't work well with tape. Also, if the sponges were too wet, they would drag the robot and the motors would not be able to move. In order to detect the objects on the table, I am using an ultrasonic sensor that sends a very quiet whining sound that bounces back if it hits an object. The machine uses this to fogure out how far away an object it, and move away accordingly. However, the most complex and most exciting thing is the homemade IR sensors, which send beams from the IR LEDs. Then, the phototransistor next to it tracks if a beam bounces back, and if so, it knows that there is a surface below, but if not, then there is no surface. The robot uses this to know if any part of it is going to go off the table, and adjusts accordingly. While it al owrks by the end, there wer 
 
 [![Final Milestone](https://i3.ytimg.com/vi/-xJQGS2z66Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=-xJQGS2z66Q&ab_channel=BlueStampEng "Final Milestone"){:target="_blank" rel="noopener"}
 
