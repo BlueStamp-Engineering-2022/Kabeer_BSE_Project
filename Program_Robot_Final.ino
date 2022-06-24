@@ -128,11 +128,17 @@ readNextDistance (), delay (200);
 //
 
 void loop () {
+readNextDistance ();
+// See if something is too close at any angle
+unsigned char tooClose = 0;
+for (unsigned char i = 0 ; i < NUM_ANGLES ; i++)
+if ( distance [ i ] < 250)
+tooClose = 1;
 
 pinState1 = digitalRead(sensorPin1);
 pinState2 = digitalRead(sensorPin2);
 backState = digitalRead(backSensor);
-/*
+
   if (pinState1) {
     Serial.println("No surface detected on left!");
   } else {
@@ -153,13 +159,6 @@ backState = digitalRead(backSensor);
   } else {
     Serial.println("No walls ahead.");
   }
-*/
-readNextDistance ();
-// See if something is too close at any angle
-unsigned char tooClose = 0;
-for (unsigned char i = 0 ; i < NUM_ANGLES ; i++)
-if ( distance [ i ] < 300)
-tooClose = 1;
 
 if(backState == 1) {
   go(LEFT,110);
@@ -167,7 +166,7 @@ if(backState == 1) {
 } else {
 if(tooClose == 1) {
     go(LEFT,-30);
-    go(RIGHT,-100);
+    go(RIGHT,-120);
 } else {
 if(pinState1 == 1 && pinState2 == 1) {
   start3 = millis();
@@ -188,7 +187,7 @@ if(pinState1 == 1 && pinState2 == 1) {
         go(LEFT,110);
         go(RIGHT,90);
       } if(backState == 0) {
-      go(LEFT,-100);
+      go(LEFT,-110);
       go(RIGHT,-30);
       }
     }
@@ -200,13 +199,13 @@ if(pinState1 == 1 && pinState2 == 1) {
         go(RIGHT,90);
       } if(backState == 0) {
       go(LEFT,-30);
-      go(RIGHT,-100);
+      go(RIGHT,-110);
       }
     }
   }
 } if(pinState1 == 1 && pinState2 == 0) {
   start1 = millis();
-  while(millis()-start1 <= 500) {
+  while(millis()-start1 <= 250) {
     if(backState == 1) {
       go(LEFT,110);
       go(RIGHT,90);
@@ -216,18 +215,18 @@ if(pinState1 == 1 && pinState2 == 1) {
     }
   }
   start6 = millis();
-  while(millis()-start6 <= 700) {
+  while(millis()-start6 <= 650) {
     if(backState == 1) {
       go(LEFT,110);
       go(RIGHT,90);
     } if(backState == 0) {
-    go(LEFT,-120);
+    go(LEFT,-110);
     go(RIGHT,-30);
     }
   }
 } if(pinState1 == 0 && pinState2 == 1) {
   start2 = millis();
-  while(millis()-start2<=500) {
+  while(millis()-start2<=250) {
     if(backState == 1) {
       go(LEFT,110);
       go(RIGHT,90);
@@ -237,20 +236,20 @@ if(pinState1 == 1 && pinState2 == 1) {
     }
   }
   start7 = millis();
-  while(millis()-start7<=700) {
+  while(millis()-start7<=650) {
     if(backState == 1) {
       go(LEFT,110);
       go(RIGHT,90);
     } if(backState == 0) {
     go(LEFT,-30);
-    go(RIGHT,-120);
+    go(RIGHT,-110);
     }
   }
 } if(pinState1 == 0 && pinState2 == 0) {
-  go(LEFT,110);
-  go(RIGHT,90);
-}
-}
-}
+  go(LEFT,120);
+  go(RIGHT,100);
+   }
+  }
+ }
 delay(250);
 }
